@@ -6,4 +6,4 @@ RUN npm install
 COPY . .
 #RUN apk add --update redis
 #ENV  PATH="/usr/local/bin:${PATH}"
-ENTRYPOINT ["npm", "run",  "start"]
+#ENTRYPOINT ["npm", "run",  "start"]
