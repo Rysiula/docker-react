@@ -3,7 +3,7 @@ services:
         - docker
 
 befor_install:
-        - docker build -t Rysiula/docker-react -f Dockerfile.dev
+        - docker build -t rysiula/docker-react -f Dockerfile.dev
 
 script:
-        - docker run  Rysiula/docker-react npm run test -- --coverage
+        - docker run  rysiula/docker-react npm run test -- --coverage
