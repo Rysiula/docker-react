@@ -8,6 +8,7 @@ before_install:
 script:
         - docker run -it rysiula/docker-react npm run test -- --coverage
 
+
 #deploy:
 #        provider: elasticbeanstalk
 #       # region: "us-east-2"
