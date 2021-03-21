@@ -9,16 +9,16 @@ script:
         - docker run -it rysiula/docker-react npm run test -- --coverage
 
 
-#deploy:
-#        provider: elasticbeanstalk
-#       # region: "us-east-2"
-#       # app: "docker"
-#       # env: "Docker-env"
-#       # bucket_name: "elasticbeanstalk-us-east-2-783266582633"
-#       # bucket_path: "docker"
-#       # on:
-#                branch: master
-#        access_key_id: $AWS_ACCESS_KEY
-#        secret_access_key:
+deploy:
+        provider: elasticbeanstalk
+        region: "us-east-1"
+        app: "docker"
+        env: "Docker-env-2"
+        bucket_name: "elasticbeanstalk-us-east-1-783266582633"
+        bucket_path: "docker"
+        on:
+                branch: master
+        access_key_id: $AWS_ACCESS_KEY
+        secret_access_key: $AWS_SECRET_KEY
 #                secure: "$AWS_SECRET_KEY"
         
